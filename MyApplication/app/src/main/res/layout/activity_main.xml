@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.app.myapplication.MainActivity"
+    android:id="@+id/relLayout">
+
+    <!--<WebView  xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A"
+        android:id="@+id/tvA"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="138dp"
+        android:layout_marginStart="138dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="B"
+        android:id="@+id/tvB"
+        android:layout_alignBottom="@+id/tvA"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="C"
+        android:id="@+id/tvC"
+        android:layout_below="@+id/tvB"
+        android:layout_alignLeft="@+id/tvB"
+        android:layout_alignStart="@+id/tvB"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="D"
+        android:id="@+id/tvD"
+        android:layout_alignTop="@+id/tvC"
+        android:layout_alignLeft="@+id/tvA"
+        android:layout_alignStart="@+id/tvA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="E"
+        android:id="@+id/tvE"
+        android:layout_alignTop="@+id/tvD"
+        android:layout_toLeftOf="@+id/tvD"
+        android:layout_toStartOf="@+id/tvD"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="F"
+        android:id="@+id/tvF"
+        android:layout_below="@+id/tvC"
+        android:layout_alignRight="@+id/tvC"
+        android:layout_alignEnd="@+id/tvC"
+        android:layout_marginTop="96dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/tvF"
+        android:layout_alignLeft="@+id/tvE"
+        android:layout_alignStart="@+id/tvE"
+        android:layout_marginTop="97dp"
+        android:text="Show route" />
+</RelativeLayout>
